@@ -19,6 +19,7 @@ class SettingsList extends StatelessWidget {
           ? backgroundGray
           : backgroundColor ?? Colors.black,
       child: ListView.builder(
+        padding: const EdgeInsets.only(bottom: 75.0),
         itemCount: sections.length,
         itemBuilder: (context, index) {
           SettingsSection current = sections[index];

@@ -80,6 +80,7 @@ class SettingsTile extends StatelessWidget {
   Widget androidTile() {
     if (_tileType == _SettingsTileType.switchTile) {
       return SwitchListTile(
+        key: Key(title),
         secondary: leading,
         value: switchValue,
         onChanged: enabled ? onToggle : null,

@@ -122,6 +122,7 @@ class CupertinoSettingsItemState extends State<CupertinoSettingsItem> {
           Padding(
             padding: const EdgeInsets.only(right: 11.0),
             child: CupertinoSwitch(
+              key: Key(widget.label),
               value: widget.switchValue,
               activeColor: widget.enabled
                   ? Theme.of(context).accentColor
